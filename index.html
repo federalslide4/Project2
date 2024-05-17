@@ -39,6 +39,12 @@
 			var num2=document.getElementById('snumber').value*1.0;
 			document.getElementById('result').innerHTML=num1**num2;
 			}
+				function log()
+			{
+			var num1=document.getElementById('fnumber').value*1.0;
+			var num2=document.getElementById('snumber').value*1.0;
+			document.getElementById('result').innerHTML=Math.log(num1)/Math.log(num2);
+			}
 		</script>
 	</head>
 	<body>
@@ -67,6 +73,9 @@
 	</button>
 				 <button onclick="exp()">
 	 Execute e
+	</button>
+					 <button onclick="log()">
+	 Execute l
 	</button>
 
 	<p id="result">
