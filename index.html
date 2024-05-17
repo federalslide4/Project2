@@ -1,0 +1,75 @@
+<!DOCTYPE html <!DOCTYPE html>
+<html>
+	<head>
+		<title>Calculatore Pizza</title>
+		<script>
+			function addTwoNumbers()
+			{
+			var num1=document.getElementById('fnumber').value*1.0;
+			var num2=document.getElementById('snumber').value*1.0;
+			document.getElementById('result').innerHTML=num1+num2;
+			}
+			function average()
+			{
+			var num1=document.getElementById('fnumber').value*1.0;
+			var num2=document.getElementById('snumber').value*1.0;
+			document.getElementById('result').innerHTML=(num1+num2)/2;
+			}
+			function subtr()
+			{
+			var num1=document.getElementById('fnumber').value*1.0;
+			var num2=document.getElementById('snumber').value*1.0;
+			document.getElementById('result').innerHTML=num1-num2;
+			}
+			function mult()
+			{
+			var num1=document.getElementById('fnumber').value*1.0;
+			var num2=document.getElementById('snumber').value*1.0;
+			document.getElementById('result').innerHTML=num1*num2;
+			}
+			function divid()
+			{
+			var num1=document.getElementById('fnumber').value*1.0;
+			var num2=document.getElementById('snumber').value*1.0;
+			document.getElementById('result').innerHTML=num1/num2;
+			}
+			function exp()
+			{
+			var num1=document.getElementById('fnumber').value*1.0;
+			var num2=document.getElementById('snumber').value*1.0;
+			document.getElementById('result').innerHTML=num1**num2;
+			}
+		</script>
+	</head>
+	<body>
+	<h1>fan wis pizzer</h1><br>
+			<form>
+				<label for="fnumber">First Number:</label>
+				<input type="text" id="fnumber" name="fnumber"><br><br>
+				<label for="snumber">Second number:</label>
+				<input type="text" id="snumber" name="snumber"><br><br>
+				
+			</form> 
+			 <button onclick="addTwoNumbers()">
+	 Execute
+	</button>
+			 <button onclick="average()">
+	 Execute a
+	</button>
+				 <button onclick="subtr()">
+	 Execute s
+	</button>
+				 <button onclick="mult()">
+	 Execute m
+	</button>
+				 <button onclick="divid()">
+	 Execute d
+	</button>
+				 <button onclick="exp()">
+	 Execute e
+	</button>
+
+	<p id="result">
+	</p>
+	</body>
+</html> 
